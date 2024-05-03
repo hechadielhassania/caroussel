@@ -2,11 +2,29 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cardContainer{
+  border: solid black;
+  margin: 3em;
+  height: 62vh;
+  width: 30%;
+  margin: auto;
 }
-
+.btnContainer{
+  display: flex;
+  justify-content: center;
+  margin: 30px 40px;
+}
+.btn{
+  border: solid blueviolet;
+  width: 25%;
+  border-radius: 15px;
+  margin: 0 20px;
+  padding: 5px;
+}
+.btn:hover{
+  color: white;
+  background-color: black;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

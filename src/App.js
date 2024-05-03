@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import photos from './modules/photos';
+import Card from './components/Card';
+import Button from './components/Button';
 
 function App() {
+  //STATE && FUNC
+  const [count, setCount] =  useState(0)
+  const [cvurrentImage, setCurrentImage] = useState(photos[0])
+  
+  useState(photos[count])
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>City Directory</h1>
+      <Card />
+      <div className='btnContainer'>
+          <Button />
+          <Button />
+      </div>
     </div>
   );
 }
