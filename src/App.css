@@ -9,6 +9,10 @@
   width: 30%;
   margin: auto;
 }
+.cardContainer img{
+  height: 100%;
+  width: 100%;
+}
 .btnContainer{
   display: flex;
   justify-content: center;
